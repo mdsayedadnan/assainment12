@@ -176,6 +176,10 @@ async function run() {
       const result = await userCollection.find().toArray()
       res.send(result)
     })
+    app.get('/tutor1', async (req, res) => {
+      const result = await userCollection.find().toArray()
+      res.send(result)
+    })
 
     // review related api
     app.get('/reviews', async (req, res) => {
